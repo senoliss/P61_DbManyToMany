@@ -9,12 +9,13 @@ namespace P61_DbManyToMany.Database.Models
 {
     public class Book
     {
-        [Key]
+        [Key] // nurodome Primary Key
         public int BookId { get; set; }
         public string Title { get; set; }
         public int Year { get; set; }
         // category prijungimas
         public List<BookCategory> BookCategories { get; set; }
+        // author klases prijungimas
         public Author Author { get; set; }
     }
 }

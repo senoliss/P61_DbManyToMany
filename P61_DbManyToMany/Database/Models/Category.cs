@@ -9,7 +9,7 @@ namespace P61_DbManyToMany.Database.Models
 {
     public class Category
     {
-        [Key]
+        [Key] // nurodome Primary Key
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         //todo: padaryti kompozicija i Book

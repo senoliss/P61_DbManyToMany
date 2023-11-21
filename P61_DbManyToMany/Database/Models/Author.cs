@@ -9,7 +9,7 @@ namespace P61_DbManyToMany.Database.Models
 {
     public class Author
     {
-        [Key]
+        [Key]   // nurodome Primary Key
         public int AuthorId { get; set; }
         public string LastName { get; set; }
         public List<Book> Books { get; set; }   // kompozicija i lentele books
